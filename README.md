@@ -6,7 +6,7 @@ Supply request module as first parameter, your default options as second and mod
 ```js
 
 const request = require('request');
-const Request = require('./request_options')(request, {jar:true});
+const Request = require('request_options')(request, {jar:true});
 
 Request.get({url: 'http://google.com'}, (error, response, body) => {
     //Stuff
@@ -17,7 +17,7 @@ Or even
 ```js
 
 const request = require('request');
-const Request = require('./request_options')(request, {url: '/search?q=cats'}, {baseUrl: 'http://google.com'});
+const Request = require('request_options')(request, {url: '/search?q=cats'}, {baseUrl: 'http://google.com'});
 
 Request.get((error, response, body) => {
     //Stuff

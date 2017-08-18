@@ -2,9 +2,9 @@
 
 function applySettings (options, settings) {
     if (options.constructor === Object) {
-        options.url = (settings.baseUrl || '') + options.url;
+        options.url = settings.baseUrl || '' + options.url || '';
     } else { //url is  the only option
-        options = (settings.baseUrl || '') + options;
+        options = settings.baseUrl || '' + options || '';
     }
     return options;
 }
