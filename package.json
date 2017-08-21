@@ -1,6 +1,6 @@
 {
   "name": "request_options",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Wrapper for creatng default options for request module + bonus settings",
   "main": "index.js",
   "scripts": {
